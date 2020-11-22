@@ -1,4 +1,4 @@
-# mysql_uuid_convert
+# MySQL UUID Convert
 User defined functions for converting UUID values to and from binary.
 
 These functions facilitate conversion of UUID values to binary values that can be efficiently used for primary keys and indices.
