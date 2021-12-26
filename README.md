@@ -12,5 +12,6 @@ This function accepts a string based UUID value. It swaps "Time Low" and "Time H
 ### convert_uuid_from_binary()
 This function restores the UUID from its binary representation. Restoring the "Time Low" and "Time High & Version" segments to their proper placement, as well as restoring the delimiters between segments.
 
+## Additonal resources:
 For more information, including the origins of this code:
 https://mariadb.com/kb/en/guiduuid-performance/
