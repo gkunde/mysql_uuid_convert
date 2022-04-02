@@ -1,6 +1,9 @@
-CREATE FUNCTION `convert_uuid_from_binary`(val BINARY(16)) RETURNS VARCHAR(36) CHARSET utf8mb4
-RETURN
-    CONCAT_WS(
+CREATE FUNCTION `convert_uuid_from_bin`(
+	val BINARY(16)
+) RETURNS varchar(36) CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci
+    DETERMINISTIC
+RETURN 
+	CONCAT_WS(
         '-',
         HEX(SUBSTR(val,  5, 4)),
         HEX(SUBSTR(val,  3, 2)),
