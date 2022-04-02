@@ -1,4 +1,4 @@
-CREATE FUNCTION `convert_uuid_to_bin`(
+CREATE FUNCTION `convert_uuid_to_binary`(
 	val BINARY(36)
 ) RETURNS binary(16)
     DETERMINISTIC
