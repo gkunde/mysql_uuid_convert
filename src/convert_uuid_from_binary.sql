@@ -1,4 +1,4 @@
-CREATE FUNCTION `convert_uuid_from_bin`(
+CREATE FUNCTION `convert_uuid_from_binary`(
 	val BINARY(16)
 ) RETURNS varchar(36) CHARSET utf8mb4 COLLATE utf8mb4_unicode_ci
     DETERMINISTIC
