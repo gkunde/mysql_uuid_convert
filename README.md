@@ -3,7 +3,7 @@ These functions facilitate conversion of string based UUID (v1) values to and fr
 
 Intended for use with version 1 UUID values. These functions swap the "Time Low" and "Time High & Version" segments. The goal is to place the more random or frequently changing segment in the middle and the least random at the beginning. This optimizes the value for use as an index, as it allows the generated indexes to have longer contiguous blocks.
 
-It is recommended that these functions are used for entering and fetching UUID values as it will ensure all values are processed and handled the same way.
+It is recommended that these functions are used for entering and fetching UUID values for a table that leverages this technique. This will ensure all values are processed and handled the same way and avoid collision due to differences in other programming languages.
 
 ## Functions:
 ### convert_uuid_to_binary()
